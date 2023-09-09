@@ -9,21 +9,92 @@
 /* Begin PBXBuildFile section */
 		BC189A042AA7AA5E006B7743 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC189A032AA7AA5E006B7743 /* AppDelegate.swift */; };
 		BC189A062AA7AA5E006B7743 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC189A052AA7AA5E006B7743 /* SceneDelegate.swift */; };
-		BC189A082AA7AA5E006B7743 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC189A072AA7AA5E006B7743 /* ViewController.swift */; };
-		BC189A0B2AA7AA5E006B7743 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC189A092AA7AA5E006B7743 /* Main.storyboard */; };
 		BC189A0D2AA7AA5F006B7743 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC189A0C2AA7AA5F006B7743 /* Assets.xcassets */; };
 		BC189A102AA7AA5F006B7743 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC189A0E2AA7AA5F006B7743 /* LaunchScreen.storyboard */; };
+		BC189A192AA7AAAF006B7743 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BC189A182AA7AAAF006B7743 /* Alamofire */; };
+		BC189A202AA7B17D006B7743 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC189A1F2AA7B17D006B7743 /* UIApplication+Extension.swift */; };
+		BC189A292AA7B1D5006B7743 /* MainParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC189A282AA7B1D5006B7743 /* MainParameter.swift */; };
+		BC189A2C2AA7B1E4006B7743 /* MainEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC189A2B2AA7B1E4006B7743 /* MainEndpoint.swift */; };
+		BC189A2E2AA7B1F0006B7743 /* Networkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC189A2D2AA7B1F0006B7743 /* Networkable.swift */; };
+		BC189A302AA7B1F8006B7743 /* Parameterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC189A2F2AA7B1F8006B7743 /* Parameterable.swift */; };
+		BC189A322AA7B1FF006B7743 /* Endpointable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC189A312AA7B1FF006B7743 /* Endpointable.swift */; };
+		BC189A352AA7B43F006B7743 /* AlamofireServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC189A342AA7B43F006B7743 /* AlamofireServiceManager.swift */; };
+		BC189A402AA7B568006B7743 /* MainModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC189A3F2AA7B568006B7743 /* MainModule.swift */; };
+		BC189A432AA7B586006B7743 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC189A412AA7B586006B7743 /* MainViewController.swift */; };
+		BC189A442AA7B586006B7743 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC189A422AA7B586006B7743 /* MainViewController.xib */; };
+		BC189A462AA7B5A0006B7743 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC189A452AA7B5A0006B7743 /* MainInteractor.swift */; };
+		BC189A482AA7B5A5006B7743 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC189A472AA7B5A5006B7743 /* MainPresenter.swift */; };
+		BC189A4A2AA7B5AA006B7743 /* MainEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC189A492AA7B5AA006B7743 /* MainEntity.swift */; };
+		BC189A4C2AA7B5AE006B7743 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC189A4B2AA7B5AE006B7743 /* MainRouter.swift */; };
+		BC189A4E2AA7B5B4006B7743 /* MainBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC189A4D2AA7B5B4006B7743 /* MainBuilder.swift */; };
+		BC189A522AA7C80B006B7743 /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC189A502AA7C80B006B7743 /* GameCell.swift */; };
+		BC189A532AA7C80B006B7743 /* GameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC189A512AA7C80B006B7743 /* GameCell.xib */; };
+		BC6EBFC02AA907840029B1DC /* MainDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6EBFBF2AA907840029B1DC /* MainDataSource.swift */; };
+		BC6EBFC32AA90F4A0029B1DC /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6EBFC22AA90F4A0029B1DC /* ImageDownloader.swift */; };
+		BC6EBFCA2AA9148F0029B1DC /* MainCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6EBFC92AA9148F0029B1DC /* MainCollectionDataSource.swift */; };
+		BC6EBFCD2AA915580029B1DC /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6EBFCB2AA915580029B1DC /* TitleCell.swift */; };
+		BC6EBFCE2AA915580029B1DC /* TitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC6EBFCC2AA915580029B1DC /* TitleCell.xib */; };
+		BC6EBFD22AA918490029B1DC /* GameContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6EBFD02AA918490029B1DC /* GameContainerCell.swift */; };
+		BC6EBFD32AA918490029B1DC /* GameContainerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC6EBFD12AA918490029B1DC /* GameContainerCell.xib */; };
+		BCE9475C2AAA5271009348C3 /* DetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE9475B2AAA5271009348C3 /* DetailEntity.swift */; };
+		BCE9475F2AAA533F009348C3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE9475D2AAA533F009348C3 /* DetailViewController.swift */; };
+		BCE947602AAA533F009348C3 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCE9475E2AAA533F009348C3 /* DetailViewController.xib */; };
+		BCE947642AAA5375009348C3 /* DetailModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE947632AAA5374009348C3 /* DetailModule.swift */; };
+		BCE947662AAA5435009348C3 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE947652AAA5435009348C3 /* DetailInteractor.swift */; };
+		BCE947682AAA5452009348C3 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE947672AAA5452009348C3 /* DetailPresenter.swift */; };
+		BCE9476A2AAA5462009348C3 /* DetailRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE947692AAA5462009348C3 /* DetailRouterProtocol.swift */; };
+		BCE9476C2AAA56F7009348C3 /* DetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE9476B2AAA56F7009348C3 /* DetailBuilder.swift */; };
+		BCE9476E2AAA632A009348C3 /* DetailDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE9476D2AAA632A009348C3 /* DetailDataSource.swift */; };
+		BCE947712AAA6542009348C3 /* DetailTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE9476F2AAA6542009348C3 /* DetailTitleCell.swift */; };
+		BCE947722AAA6542009348C3 /* DetailTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCE947702AAA6542009348C3 /* DetailTitleCell.xib */; };
+		BCE947752AAA655D009348C3 /* DetailDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE947732AAA655D009348C3 /* DetailDescriptionCell.swift */; };
+		BCE947762AAA655D009348C3 /* DetailDescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCE947742AAA655D009348C3 /* DetailDescriptionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BC189A002AA7AA5E006B7743 /* GamesVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamesVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC189A032AA7AA5E006B7743 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC189A052AA7AA5E006B7743 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BC189A072AA7AA5E006B7743 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BC189A0A2AA7AA5E006B7743 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC189A0C2AA7AA5F006B7743 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC189A0F2AA7AA5F006B7743 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC189A112AA7AA5F006B7743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC189A1F2AA7B17D006B7743 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		BC189A282AA7B1D5006B7743 /* MainParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainParameter.swift; sourceTree = "<group>"; };
+		BC189A2B2AA7B1E4006B7743 /* MainEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEndpoint.swift; sourceTree = "<group>"; };
+		BC189A2D2AA7B1F0006B7743 /* Networkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networkable.swift; sourceTree = "<group>"; };
+		BC189A2F2AA7B1F8006B7743 /* Parameterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameterable.swift; sourceTree = "<group>"; };
+		BC189A312AA7B1FF006B7743 /* Endpointable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpointable.swift; sourceTree = "<group>"; };
+		BC189A342AA7B43F006B7743 /* AlamofireServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireServiceManager.swift; sourceTree = "<group>"; };
+		BC189A3F2AA7B568006B7743 /* MainModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModule.swift; sourceTree = "<group>"; };
+		BC189A412AA7B586006B7743 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BC189A422AA7B586006B7743 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		BC189A452AA7B5A0006B7743 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		BC189A472AA7B5A5006B7743 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		BC189A492AA7B5AA006B7743 /* MainEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEntity.swift; sourceTree = "<group>"; };
+		BC189A4B2AA7B5AE006B7743 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		BC189A4D2AA7B5B4006B7743 /* MainBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBuilder.swift; sourceTree = "<group>"; };
+		BC189A502AA7C80B006B7743 /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
+		BC189A512AA7C80B006B7743 /* GameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameCell.xib; sourceTree = "<group>"; };
+		BC6EBFBF2AA907840029B1DC /* MainDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataSource.swift; sourceTree = "<group>"; };
+		BC6EBFC22AA90F4A0029B1DC /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		BC6EBFC92AA9148F0029B1DC /* MainCollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionDataSource.swift; sourceTree = "<group>"; };
+		BC6EBFCB2AA915580029B1DC /* TitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCell.swift; sourceTree = "<group>"; };
+		BC6EBFCC2AA915580029B1DC /* TitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleCell.xib; sourceTree = "<group>"; };
+		BC6EBFD02AA918490029B1DC /* GameContainerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameContainerCell.swift; sourceTree = "<group>"; };
+		BC6EBFD12AA918490029B1DC /* GameContainerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameContainerCell.xib; sourceTree = "<group>"; };
+		BCE9475B2AAA5271009348C3 /* DetailEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEntity.swift; sourceTree = "<group>"; };
+		BCE9475D2AAA533F009348C3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BCE9475E2AAA533F009348C3 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		BCE947632AAA5374009348C3 /* DetailModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModule.swift; sourceTree = "<group>"; };
+		BCE947652AAA5435009348C3 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		BCE947672AAA5452009348C3 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		BCE947692AAA5462009348C3 /* DetailRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouterProtocol.swift; sourceTree = "<group>"; };
+		BCE9476B2AAA56F7009348C3 /* DetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBuilder.swift; sourceTree = "<group>"; };
+		BCE9476D2AAA632A009348C3 /* DetailDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDataSource.swift; sourceTree = "<group>"; };
+		BCE9476F2AAA6542009348C3 /* DetailTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTitleCell.swift; sourceTree = "<group>"; };
+		BCE947702AAA6542009348C3 /* DetailTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTitleCell.xib; sourceTree = "<group>"; };
+		BCE947732AAA655D009348C3 /* DetailDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDescriptionCell.swift; sourceTree = "<group>"; };
+		BCE947742AAA655D009348C3 /* DetailDescriptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailDescriptionCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC189A192AA7AAAF006B7743 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +128,370 @@
 		BC189A022AA7AA5E006B7743 /* GamesVIPER */ = {
 			isa = PBXGroup;
 			children = (
-				BC189A032AA7AA5E006B7743 /* AppDelegate.swift */,
-				BC189A052AA7AA5E006B7743 /* SceneDelegate.swift */,
-				BC189A072AA7AA5E006B7743 /* ViewController.swift */,
-				BC189A092AA7AA5E006B7743 /* Main.storyboard */,
-				BC189A0C2AA7AA5F006B7743 /* Assets.xcassets */,
-				BC189A0E2AA7AA5F006B7743 /* LaunchScreen.storyboard */,
-				BC189A112AA7AA5F006B7743 /* Info.plist */,
+				BC189A1A2AA7AFF3006B7743 /* Delegates */,
+				BC189A1C2AA7B00B006B7743 /* Resources */,
+				BC189A1D2AA7B010006B7743 /* Storyboards */,
+				BC189A1B2AA7B002006B7743 /* Supports */,
+				BC189A232AA7B18F006B7743 /* Modules */,
+				BC189A222AA7B18B006B7743 /* Network */,
+				BC189A212AA7B183006B7743 /* ServiceManagers */,
+				BC189A1E2AA7B16F006B7743 /* Extensions */,
 			);
 			path = GamesVIPER;
+			sourceTree = "<group>";
+		};
+		BC189A1A2AA7AFF3006B7743 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				BC189A032AA7AA5E006B7743 /* AppDelegate.swift */,
+				BC189A052AA7AA5E006B7743 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		BC189A1B2AA7B002006B7743 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				BC189A112AA7AA5F006B7743 /* Info.plist */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		BC189A1C2AA7B00B006B7743 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC189A0C2AA7AA5F006B7743 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BC189A1D2AA7B010006B7743 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BC189A0E2AA7AA5F006B7743 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		BC189A1E2AA7B16F006B7743 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BC189A1F2AA7B17D006B7743 /* UIApplication+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BC189A212AA7B183006B7743 /* ServiceManagers */ = {
+			isa = PBXGroup;
+			children = (
+				BC6EBFC12AA90F420029B1DC /* ImageDownloader */,
+				BC189A332AA7B433006B7743 /* Alamofire */,
+			);
+			path = ServiceManagers;
+			sourceTree = "<group>";
+		};
+		BC189A222AA7B18B006B7743 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BC189A262AA7B1C7006B7743 /* Endpoints */,
+				BC189A252AA7B1C2006B7743 /* Parameters */,
+				BC189A242AA7B1BE006B7743 /* Protocols */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BC189A232AA7B18F006B7743 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BCE9474F2AAA4FBC009348C3 /* Main */,
+				BCE947502AAA4FC7009348C3 /* Detail */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BC189A242AA7B1BE006B7743 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BC189A2D2AA7B1F0006B7743 /* Networkable.swift */,
+				BC189A2F2AA7B1F8006B7743 /* Parameterable.swift */,
+				BC189A312AA7B1FF006B7743 /* Endpointable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BC189A252AA7B1C2006B7743 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				BC189A272AA7B1D1006B7743 /* Main */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		BC189A262AA7B1C7006B7743 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				BC189A2A2AA7B1D9006B7743 /* Main */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		BC189A272AA7B1D1006B7743 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BC189A282AA7B1D5006B7743 /* MainParameter.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BC189A2A2AA7B1D9006B7743 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BC189A2B2AA7B1E4006B7743 /* MainEndpoint.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BC189A332AA7B433006B7743 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				BC189A342AA7B43F006B7743 /* AlamofireServiceManager.swift */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		BC189A362AA7B52D006B7743 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BC6EBFCF2AA918390029B1DC /* GameContainerCell */,
+				BC6EBFC42AA9121C0029B1DC /* TitleCell */,
+				BC189A4F2AA7C7FB006B7743 /* GameCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BC189A372AA7B532006B7743 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				BC189A4D2AA7B5B4006B7743 /* MainBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		BC189A382AA7B537006B7743 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				BC189A3F2AA7B568006B7743 /* MainModule.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		BC189A392AA7B53E006B7743 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BC189A4B2AA7B5AE006B7743 /* MainRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BC189A3A2AA7B542006B7743 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				BC189A492AA7B5AA006B7743 /* MainEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		BC189A3B2AA7B547006B7743 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BC189A472AA7B5A5006B7743 /* MainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BC189A3C2AA7B54C006B7743 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BC189A452AA7B5A0006B7743 /* MainInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BC189A3D2AA7B551006B7743 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC189A412AA7B586006B7743 /* MainViewController.swift */,
+				BC189A422AA7B586006B7743 /* MainViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC189A3E2AA7B555006B7743 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				BC6EBFBF2AA907840029B1DC /* MainDataSource.swift */,
+				BC6EBFC92AA9148F0029B1DC /* MainCollectionDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		BC189A4F2AA7C7FB006B7743 /* GameCell */ = {
+			isa = PBXGroup;
+			children = (
+				BC189A502AA7C80B006B7743 /* GameCell.swift */,
+				BC189A512AA7C80B006B7743 /* GameCell.xib */,
+			);
+			path = GameCell;
+			sourceTree = "<group>";
+		};
+		BC6EBFC12AA90F420029B1DC /* ImageDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				BC6EBFC22AA90F4A0029B1DC /* ImageDownloader.swift */,
+			);
+			path = ImageDownloader;
+			sourceTree = "<group>";
+		};
+		BC6EBFC42AA9121C0029B1DC /* TitleCell */ = {
+			isa = PBXGroup;
+			children = (
+				BC6EBFCB2AA915580029B1DC /* TitleCell.swift */,
+				BC6EBFCC2AA915580029B1DC /* TitleCell.xib */,
+			);
+			path = TitleCell;
+			sourceTree = "<group>";
+		};
+		BC6EBFCF2AA918390029B1DC /* GameContainerCell */ = {
+			isa = PBXGroup;
+			children = (
+				BC6EBFD02AA918490029B1DC /* GameContainerCell.swift */,
+				BC6EBFD12AA918490029B1DC /* GameContainerCell.xib */,
+			);
+			path = GameContainerCell;
+			sourceTree = "<group>";
+		};
+		BCE9474F2AAA4FBC009348C3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BC189A3D2AA7B551006B7743 /* View */,
+				BC189A3E2AA7B555006B7743 /* DataSource */,
+				BC189A3C2AA7B54C006B7743 /* Interactor */,
+				BC189A3B2AA7B547006B7743 /* Presenter */,
+				BC189A3A2AA7B542006B7743 /* Entity */,
+				BC189A392AA7B53E006B7743 /* Router */,
+				BC189A382AA7B537006B7743 /* Module */,
+				BC189A372AA7B532006B7743 /* Builder */,
+				BC189A362AA7B52D006B7743 /* Cells */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BCE947502AAA4FC7009348C3 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				BCE947522AAA5199009348C3 /* View */,
+				BCE947512AAA5192009348C3 /* DataSource */,
+				BCE947532AAA51F3009348C3 /* Interactor */,
+				BCE947542AAA51F7009348C3 /* Presenter */,
+				BCE947552AAA5200009348C3 /* Entity */,
+				BCE947562AAA5204009348C3 /* Router */,
+				BCE947572AAA5207009348C3 /* Module */,
+				BCE947582AAA520C009348C3 /* Builder */,
+				BCE947592AAA5210009348C3 /* Cells */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		BCE947512AAA5192009348C3 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				BCE9476D2AAA632A009348C3 /* DetailDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		BCE947522AAA5199009348C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCE9475D2AAA533F009348C3 /* DetailViewController.swift */,
+				BCE9475E2AAA533F009348C3 /* DetailViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BCE947532AAA51F3009348C3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BCE947652AAA5435009348C3 /* DetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BCE947542AAA51F7009348C3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BCE947672AAA5452009348C3 /* DetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BCE947552AAA5200009348C3 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				BCE9475B2AAA5271009348C3 /* DetailEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		BCE947562AAA5204009348C3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BCE947692AAA5462009348C3 /* DetailRouterProtocol.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BCE947572AAA5207009348C3 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				BCE947632AAA5374009348C3 /* DetailModule.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		BCE947582AAA520C009348C3 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				BCE9476B2AAA56F7009348C3 /* DetailBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		BCE947592AAA5210009348C3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BCE947622AAA5352009348C3 /* DescriptionCell */,
+				BCE947612AAA534F009348C3 /* TitleCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BCE947612AAA534F009348C3 /* TitleCell */ = {
+			isa = PBXGroup;
+			children = (
+				BCE9476F2AAA6542009348C3 /* DetailTitleCell.swift */,
+				BCE947702AAA6542009348C3 /* DetailTitleCell.xib */,
+			);
+			path = TitleCell;
+			sourceTree = "<group>";
+		};
+		BCE947622AAA5352009348C3 /* DescriptionCell */ = {
+			isa = PBXGroup;
+			children = (
+				BCE947732AAA655D009348C3 /* DetailDescriptionCell.swift */,
+				BCE947742AAA655D009348C3 /* DetailDescriptionCell.xib */,
+			);
+			path = DescriptionCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +510,9 @@
 			dependencies = (
 			);
 			name = GamesVIPER;
+			packageProductDependencies = (
+				BC189A182AA7AAAF006B7743 /* Alamofire */,
+			);
 			productName = GamesVIPER;
 			productReference = BC189A002AA7AA5E006B7743 /* GamesVIPER.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +541,9 @@
 				Base,
 			);
 			mainGroup = BC1899F72AA7AA5E006B7743;
+			packageReferences = (
+				BC189A172AA7AAAF006B7743 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = BC189A012AA7AA5E006B7743 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,8 +559,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC189A102AA7AA5F006B7743 /* LaunchScreen.storyboard in Resources */,
+				BCE947722AAA6542009348C3 /* DetailTitleCell.xib in Resources */,
+				BC189A442AA7B586006B7743 /* MainViewController.xib in Resources */,
+				BCE947762AAA655D009348C3 /* DetailDescriptionCell.xib in Resources */,
+				BCE947602AAA533F009348C3 /* DetailViewController.xib in Resources */,
 				BC189A0D2AA7AA5F006B7743 /* Assets.xcassets in Resources */,
-				BC189A0B2AA7AA5E006B7743 /* Main.storyboard in Resources */,
+				BC6EBFD32AA918490029B1DC /* GameContainerCell.xib in Resources */,
+				BC189A532AA7C80B006B7743 /* GameCell.xib in Resources */,
+				BC6EBFCE2AA915580029B1DC /* TitleCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +577,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC189A082AA7AA5E006B7743 /* ViewController.swift in Sources */,
+				BCE9475C2AAA5271009348C3 /* DetailEntity.swift in Sources */,
+				BC189A292AA7B1D5006B7743 /* MainParameter.swift in Sources */,
+				BCE947682AAA5452009348C3 /* DetailPresenter.swift in Sources */,
+				BCE9476E2AAA632A009348C3 /* DetailDataSource.swift in Sources */,
+				BC189A4A2AA7B5AA006B7743 /* MainEntity.swift in Sources */,
+				BC189A432AA7B586006B7743 /* MainViewController.swift in Sources */,
 				BC189A042AA7AA5E006B7743 /* AppDelegate.swift in Sources */,
+				BC189A352AA7B43F006B7743 /* AlamofireServiceManager.swift in Sources */,
+				BCE9476A2AAA5462009348C3 /* DetailRouterProtocol.swift in Sources */,
+				BC189A4C2AA7B5AE006B7743 /* MainRouter.swift in Sources */,
+				BC189A322AA7B1FF006B7743 /* Endpointable.swift in Sources */,
+				BC6EBFCA2AA9148F0029B1DC /* MainCollectionDataSource.swift in Sources */,
+				BC189A202AA7B17D006B7743 /* UIApplication+Extension.swift in Sources */,
+				BCE947752AAA655D009348C3 /* DetailDescriptionCell.swift in Sources */,
+				BC6EBFC32AA90F4A0029B1DC /* ImageDownloader.swift in Sources */,
+				BC189A4E2AA7B5B4006B7743 /* MainBuilder.swift in Sources */,
+				BC189A482AA7B5A5006B7743 /* MainPresenter.swift in Sources */,
 				BC189A062AA7AA5E006B7743 /* SceneDelegate.swift in Sources */,
+				BC189A2E2AA7B1F0006B7743 /* Networkable.swift in Sources */,
+				BCE9475F2AAA533F009348C3 /* DetailViewController.swift in Sources */,
+				BCE947642AAA5375009348C3 /* DetailModule.swift in Sources */,
+				BC189A302AA7B1F8006B7743 /* Parameterable.swift in Sources */,
+				BCE947712AAA6542009348C3 /* DetailTitleCell.swift in Sources */,
+				BC6EBFD22AA918490029B1DC /* GameContainerCell.swift in Sources */,
+				BCE9476C2AAA56F7009348C3 /* DetailBuilder.swift in Sources */,
+				BC6EBFCD2AA915580029B1DC /* TitleCell.swift in Sources */,
+				BC189A522AA7C80B006B7743 /* GameCell.swift in Sources */,
+				BCE947662AAA5435009348C3 /* DetailInteractor.swift in Sources */,
+				BC189A402AA7B568006B7743 /* MainModule.swift in Sources */,
+				BC189A2C2AA7B1E4006B7743 /* MainEndpoint.swift in Sources */,
+				BC189A462AA7B5A0006B7743 /* MainInteractor.swift in Sources */,
+				BC6EBFC02AA907840029B1DC /* MainDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BC189A092AA7AA5E006B7743 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BC189A0A2AA7AA5E006B7743 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BC189A0E2AA7AA5F006B7743 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,10 +749,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QHYXVGKS7V;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GamesVIPER/Info.plist;
+				INFOPLIST_FILE = GamesVIPER/Supports/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -317,10 +776,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QHYXVGKS7V;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GamesVIPER/Info.plist;
+				INFOPLIST_FILE = GamesVIPER/Supports/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +816,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BC189A172AA7AAAF006B7743 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BC189A182AA7AAAF006B7743 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC189A172AA7AAAF006B7743 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BC1899F82AA7AA5E006B7743 /* Project object */;
 }
